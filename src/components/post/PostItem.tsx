@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { IPost } from "../models/IPost";
-import { postAPI } from "../services/PostService";
+import { IPost } from "../../models/IPost";
+import { postAPI } from "../../services/PostService";
 
 interface PostItemProps {
   post: IPost;

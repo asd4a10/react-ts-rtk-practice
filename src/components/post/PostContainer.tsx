@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { postAPI } from "../services/PostService";
+import { postAPI } from "../../services/PostService";
 import PostItem from "./PostItem";
-import { IPost } from "../models/IPost";
+import { IPost } from "../../models/IPost";
 
 const PostContainer = () => {
   const [limit, setLimit] = useState(10);
