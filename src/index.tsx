@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { Provider } from "react-redux";
 import { setupStore } from "./store";
+import "./assets/index.css";
 
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import UsersPage from "./views/UsersPage";

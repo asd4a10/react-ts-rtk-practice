@@ -43,6 +43,7 @@
   ],
   "vacancies": [
     {
+      "id": 1,
       "title": "Software Engineer, University Graduate, 2024",
       "company": "Google",
       "location": "Taipei, Taiwan",
@@ -50,6 +51,7 @@
       "link": "https://www.google.com/about/careers/applications/jobs/results/139721427436610246-software-engineer-university-graduate-2024?q=software+engineer+jobs+for+early+careers&target_level=EARLY"
     },
     {
+      "id":2,
       "title": "Systems Development Engineer, Baremetal Regional Extensions, Google Cloud",
       "company": "Google",
       "location": "Warsaw, Poland",
@@ -57,6 +59,7 @@
       "link": "https://www.google.com/about/careers/applications/jobs/results/114432925748863686-systems-development-engineer-baremetal-regional-extensions-google-cloud?q=software+engineer+jobs+for+early+careers&target_level=EARLY"
     },
     {
+      "id": 3,
       "title": "Software Engineer, University Graduate 2023",
       "company": "Google",
       "location": "Bucharest, Romania",
@@ -64,6 +67,7 @@
       "link": "https://www.google.com/about/careers/applications/jobs/results/119154719378547398-software-engineer-university-graduate-2023?q=software+engineer+jobs+for+early+careers&target_level=EARLY"
     },
     {
+      "id": 4,
       "title": "System Development Engineer",
       "company": "Google",
       "location": "Dublin, Ireland",
@@ -71,6 +75,7 @@
       "link": "https://www.google.com/about/careers/applications/jobs/results/105294734638883526-system-development-engineer?q=software+engineer+jobs+for+early+careers&target_level=EARLY"
     },
     {
+      "id": 5,
       "title": "Software Engineer, University Graduate (2023)",
       "company": "Google",
       "location": "Warsaw, Poland",
