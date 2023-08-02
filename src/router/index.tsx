@@ -1,20 +1,52 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+
+// pages
 import UsersPage from "../views/UsersPage";
 import TodosPage from "../views/TodosPage";
-import React from "react";
+import HomePage from "../views/HomePage";
+import AboutPage from "../views/AboutPage";
+
+// layout
+import RootLayout from "../layouts/RootLayout";
+import HelpLayout from "../layouts/HelpLayout";
+import ContactPage from "../views/help/ContactPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div>Home</div>,
-  },
-  {
-    path: "/users",
-    element: <UsersPage />,
-  },
-  {
-    path: "/todos",
-    element: <TodosPage />,
+    element: <RootLayout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "users",
+        element: <UsersPage />,
+      },
+      {
+        path: "todos",
+        element: <TodosPage />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
+      },
+      {
+        path: "help",
+        element: <HelpLayout />,
+        children: [
+          {
+            path: "faq",
+            element: <div>faq page</div>,
+          },
+          {
+            path: "contact",
+            element: <ContactPage />,
+          },
+        ],
+      },
+    ],
   },
 ]);
+
+export default router;
