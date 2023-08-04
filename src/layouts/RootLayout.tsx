@@ -6,10 +6,11 @@ const RootLayout: FC = () => {
     <div className={"root-layout"}>
       <header>
         <nav>
-          <h1>COMPANY</h1>
+          <h1>Kick Starter</h1>
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/users"}>Users</NavLink>
           <NavLink to={"/todos"}>Todos</NavLink>
+          <NavLink to={"/careers"}>Careers</NavLink>
           <NavLink to={"/about"}>About</NavLink>
           <NavLink to={"/help"}>Help</NavLink>
         </nav>

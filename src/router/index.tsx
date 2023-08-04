@@ -10,6 +10,10 @@ import AboutPage from "../views/AboutPage";
 import RootLayout from "../layouts/RootLayout";
 import HelpLayout from "../layouts/HelpLayout";
 import ContactPage from "../views/help/ContactPage";
+import NotFoundPage from "../views/NotFoundPage";
+import CareersPage from "../modules/careers/views/CareersPage";
+import VacancyDetails from "../modules/careers/components/VacancyDetails";
+import CareersLayout from "../layouts/CareersLayout";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,20 @@ const router = createBrowserRouter([
       {
         path: "todos",
         element: <TodosPage />,
+      },
+      {
+        path: "careers",
+        element: <CareersLayout />,
+        children: [
+          {
+            path: "",
+            element: <CareersPage />,
+          },
+          {
+            path: ":id",
+            element: <VacancyDetails />,
+          },
+        ],
       },
       {
         path: "about",
@@ -45,6 +63,7 @@ const router = createBrowserRouter([
           },
         ],
       },
+      { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);

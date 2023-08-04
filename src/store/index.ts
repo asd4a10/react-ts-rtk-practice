@@ -1,14 +1,14 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import userReducer from "./reducers/UserSlice";
+// import userReducer from "./reducers/UserSlice";
 import { postAPI } from "../services/PostService";
-import { vacancyAPI } from "../modules/vacancy/services/VacancyService";
 import { userAPI } from "../services/UserService";
+import { careerAPI } from "../modules/careers/services/CareerService";
 
 const rootReducer = combineReducers({
   // userReducer,
   [postAPI.reducerPath]: postAPI.reducer,
-  [vacancyAPI.reducerPath]: vacancyAPI.reducer,
   [userAPI.reducerPath]: userAPI.reducer,
+  [careerAPI.reducerPath]: careerAPI.reducer,
 });
 
 export const setupStore = () => {
@@ -18,7 +18,7 @@ export const setupStore = () => {
       getDefaultMiddleware()
         .concat(postAPI.middleware)
         .concat(userAPI.middleware)
-        .concat(vacancyAPI.middleware),
+        .concat(careerAPI.middleware),
   });
 };
 

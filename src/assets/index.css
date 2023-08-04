@@ -128,6 +128,12 @@ form label span {
     margin: 20px 0;
 }
 
+.career-details .links {
+    display: flex;
+    gap: 1rem;
+}
+
+
 /* breadcrumbs */
 .breadcrumbs {
     max-width: 1200px;
@@ -147,3 +153,5 @@ form label span {
 .breadcrumbs .crumb a {
     color: #ddd;
 }
+
+/* */
